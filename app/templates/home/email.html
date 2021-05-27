@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body style="font-family: sans-serif;">
+    <div style="display: block; margin: 0 auto;" >
+        {% for item in itens: %}
+        <div style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);max-width: 300px;text-align: center;font-family: arial;float: left;margin-left: 20px;">
+            <img src="https://picsum.photos/200/300" alt="Denim Jeans" style="width:100%">
+            <h2>{{ item.product | format_label }}</h2>
+            <h3>[{{ item.company }}]</h3>
+            <p style="color: grey;font-size: 22px;">{{ item.cash_price }}</p>
+            <p>{{ item.title }}</p>
+            <p><button style="border: none;outline: 0;padding: 12px;color: white;background-color: #000;text-align: center;cursor: pointer;width: 100%;font-size: 18px;">Link</button></p>
+        </div>
+        {% endfor %}
+    </div>
+  </body>
+</html>

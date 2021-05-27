@@ -1,0 +1,14 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block body %}
+
+<h2>Profile</h2>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Reset Form -->
+        {{ wtf.quick_form(form) }}    
+    </div>
+</div>
+
+{% endblock %}

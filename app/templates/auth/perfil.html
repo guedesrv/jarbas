@@ -1,0 +1,12 @@
+{% import "bootstrap/utils.html" as utils %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html" %}
+{% block title %}Perfil{% endblock %}
+{% block body %}
+
+{{ wtf.quick_form(form) }}
+
+{% endblock %}
+{% block script_extra %}
+    
+{% endblock %}

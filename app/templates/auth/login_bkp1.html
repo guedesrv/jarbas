@@ -1,0 +1,26 @@
+{% import "bootstrap/utils.html" as utils %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block body %}
+<section class="jumbotron text-center">
+  <div class="container">
+      <h1 class="jumbotron-heading">Olá eu sou o Jarbas</h1>
+      <p class="lead text-muted mb-0">Sou um robô que faz monitoramento de preços e envio diretamente para você no e-mail!</p>
+  </div>
+</section>
+<div class="container">
+  <div class="row">
+      <div class="wrapper">
+        <br/>
+        {{ utils.flashed_messages() }}
+        <br/>
+        <div class="center">
+          <h1>Logar no painel</h1>
+          <br/>
+          {{ wtf.quick_form(form) }}
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}
